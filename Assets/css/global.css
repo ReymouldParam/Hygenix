@@ -1,0 +1,82 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 50px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    /* or your navbar background */
+    z-index: 1000;
+    /* very high so it stays above everything */
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* optional: add a small shadow */
+}
+
+.logo img {
+    height: 60px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    position: relative;
+}
+
+/* Active Link */
+.nav-links a.active {
+    color: #f58220;
+    /* Orange color */
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: #f58220;
+    border-radius: 20px;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Contact Button */
+.contact-button a {
+    background-color: #f58220;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-button a span {
+    font-size: 14px;
+}
