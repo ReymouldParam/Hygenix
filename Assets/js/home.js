@@ -1,5 +1,12 @@
-// Scroll animation for the entire section
+// Navbar
+const toggleBtn = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
+toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Scroll animation for the entire section
 window.addEventListener('scroll', function () {
     const heroSection = document.querySelector('.hero-section');
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;

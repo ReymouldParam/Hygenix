@@ -80,3 +80,69 @@ body {
 .contact-button a span {
     font-size: 14px;
 }
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+.contact-us{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: white;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+        display: none; /* Hidden by default on mobile */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    .contact-us{
+        display: block;
+    }
+
+    .contact-button {
+        display: none; /* Optional: hide contact button on mobile */
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1919px){
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        /* or your navbar background */
+        z-index: 1000;
+        /* very high so it stays above everything */
+        padding: 8px 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        /* optional: add a small shadow */
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+
+}
