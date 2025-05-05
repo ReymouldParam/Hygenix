@@ -15,7 +15,7 @@
     <!-- Global css -->
     <link rel="stylesheet" href="Assets/css/global.css" />
     <!-- Products css -->
-    <link rel="stylesheet" href="./Assets/css/products.css"/>
+    <link rel="stylesheet" href="./Assets/css/products.css" />
 </head>
 
 <body>
@@ -28,73 +28,74 @@
             <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
 
             <nav class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">R&amp;D</a>
+                <a href="./index.html" class="active">Home</a>
+                <a href="./about-us.html">About Us</a>
+                <a href="./R-and-D.html">R&amp;D</a>
                 <div class="dropdown">
-                    <a href="#" class="active">Products</a>
+                    <a href="./products.html">Products</a>
                 </div>
                 <a href="#">Gallery</a>
                 <a href="#" class="contact-us">Contact Us</a>
             </nav>
 
             <div class="contact-button">
-                <a href="#">Contact Us <span>&#8599;</span></a>
+                <a href="./contact-page.html">Contact Us <span>&#8599;</span></a>
             </div>
         </header>
 
-        <div class="container">
+        <div class="products-flex-wrapper">
             <aside class="sidebar">
                 <h2>OUR PRODUCTS</h2>
                 <ul id="productList">
                     <li class="active" data-type="Tomato">
-                        <img src="Assets/images/products/tomato.png" alt="Tomato"/>
+                        <img src="Assets/images/image 3.svg" alt="Tomato" />
                         <span>Tomato</span>
                     </li>
                     <li data-type="Hot Pepper">
-                        <img src="Assets/images/products/pepper.png" alt="Hot Pepper"/>
+                        <img src="Assets/images/image 4.svg" alt="Hot Pepper" />
                         <span>Hot Pepper</span>
                     </li>
                     <li data-type="Capsicum">
-                        <img src="Assets/images/products/capsicum.png" alt="Capsicum"/>
+                        <img src="Assets/images/image 5.svg" alt="Capsicum" />
                         <span>Capsicum</span>
                     </li>
                     <li data-type="Watermelon">
-                        <img src="Assets/images/products/watermelon.png" alt="Watermelon"/>
+                        <img src="Assets/images/image 6.svg" alt="Watermelon" />
                         <span>Watermelon</span>
                     </li>
                     <li data-type="Okra">
-                        <img src="Assets/images/products/okra.png" alt="Okra"/>
+                        <img src="Assets/images/image 7 (1).svg" alt="Okra" />
                         <span>Okra</span>
                     </li>
                     <li data-type="Cucumber">
-                        <img src="Assets/images/products/cucumber.png" alt="Cucumber"/>
+                        <img src="Assets/images/image 8.svg" alt="Cucumber" />
                         <span>Cucumber</span>
                     </li>
                     <li data-type="Bottle Gourd">
-                        <img src="Assets/images/products/bottle-gourd.png" alt="Bottle Gourd"/>
+                        <img src="Assets/images/image 9.svg" alt="Bottle Gourd" />
                         <span>Bottle Gourd</span>
                     </li>
                     <li data-type="Bitter Gourd">
-                        <img src="Assets/images/products/bitter-gourd.png" alt="Bitter Gourd"/>
+                        <img src="Assets/images/image 10.svg" alt="Bitter Gourd" />
                         <span>Bitter Gourd</span>
                     </li>
                     <li data-type="Sponge Gourd">
-                        <img src="Assets/images/products/sponge-gourd.png" alt="Sponge Gourd"/>
+                        <img src="Assets/images/image 11.svg" alt="Sponge Gourd" />
                         <span>Sponge Gourd</span>
                     </li>
                     <li data-type="Ridge Gourd">
-                        <img src="Assets/images/products/ridge-gourd.png" alt="Ridge Gourd"/>
+                        <img src="Assets/images/image 12.svg" alt="Ridge Gourd" />
                         <span>Ridge Gourd</span>
                     </li>
                 </ul>
             </aside>
-        
-            <main class="content">
-                <div id="seedsContainer" class="seeds-list">
-                    <!-- Seed cards will be dynamically inserted here -->
-                </div>
-            </main>
+            <div class="container">
+                <main class="content">
+                    <div id="seedsContainer" class="seeds-list">
+                        <!-- Seed cards will be dynamically inserted here -->
+                    </div>
+                </main>
+            </div>
         </div>
 
         <!-- footer -->

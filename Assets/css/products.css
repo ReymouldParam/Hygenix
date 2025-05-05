@@ -1,14 +1,29 @@
 /* Main Container */
+.products-flex-wrapper {
+    display: flex;
+    align-items: flex-start;
+    /* Ensure top-aligned layout */
+    width: 90%;
+    margin: auto;
+    /* margin-top: 2%; */
+    padding: 3%;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+
 .container {
     display: flex;
-    max-width: 1400px;
-    margin: 2rem auto;
+    max-width: 80%;
+    margin: auto;
     background: #f9f3ef;
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 140px);
     border-radius: 18px;
     box-shadow: none;
     overflow: visible;
-    padding: 24px 0;
+    padding: 20px 0;
+    margin-top: 4%;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /* Sidebar */
@@ -16,23 +31,33 @@
     width: 320px;
     background: #fff;
     border-radius: 18px 0 0 18px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-    margin-left: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    margin-left: 16px;
     margin-right: 0;
     height: auto;
-    padding-bottom: 24px;
+    padding-bottom: 10px;
+    margin-top: 4%;
+    border-radius: 18px;
 }
 
 .sidebar h2 {
     background: #111;
     color: #fff;
     margin: 0;
-    padding: 22px 0 22px 32px;
+    /* padding: 1px 0 10px 35px; */
     font-size: 22px;
     text-align: left;
     font-weight: 700;
-    letter-spacing: 1px;
-    border-radius: 18px 0 0 0;
+    /* letter-spacing: 1px; */
+    border-radius: 18px 18px 0 0;
+    padding: 12px;
+    position: sticky;
+    top: 20px;
+    /* adjust based on your header height or desired spacing */
+    align-self: flex-start;
+    /* prevent full height stretch */
+    height: fit-content;
+    z-index: 10;
 }
 
 .sidebar ul {
@@ -45,7 +70,7 @@
     display: flex;
     align-items: center;
     font-size: 20px;
-    padding: 16px 0 16px 32px;
+    padding: 10px 0 2px 0px;
     border-left: 8px solid transparent;
     cursor: pointer;
     color: #222;
@@ -55,16 +80,18 @@
     margin-bottom: 2px;
 }
 
-.sidebar li img, .sidebar li span.emoji {
+.sidebar li img,
+.sidebar li span.emoji {
     width: 36px;
     height: 36px;
-    margin-right: 18px;
+    margin-right: 5px;
+    margin-left: 2px;
     font-size: 2rem;
     display: inline-block;
 }
 
 .sidebar li.active {
-    background: #fff7f0;
+    background: #f9f3ef;
     border-left: 8px solid #f28b30;
     color: #f28b30;
     font-weight: 700;
@@ -79,17 +106,22 @@
 .content {
     flex: 1;
     background: transparent;
-    padding: 0 32px 0 32px;
-    min-height: calc(100vh - 120px);
+    padding: 0 16px 0 30px;
+    /* min-height: calc(100vh - 140px); */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    max-height: calc(100vh - 140px);
+    /* maintain alignment with your .container min-height */
+    overflow-y: auto;
+    padding-right: 10px;
+    /* space for scrollbar */
 }
 
 .seeds-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 12px;
     margin-top: 0;
 }
 
@@ -97,23 +129,28 @@
     .seeds-list {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .container {
         max-width: 98vw;
     }
 }
+
 @media (max-width: 900px) {
     .seeds-list {
         grid-template-columns: 1fr;
     }
+
     .container {
         flex-direction: column;
         padding: 0;
     }
+
     .sidebar {
         width: 100%;
         margin: 0 0 24px 0;
         border-radius: 18px 18px 0 0;
     }
+
     .content {
         padding: 0 12px;
     }
@@ -121,14 +158,14 @@
 
 .seed-card {
     background: #fff;
-    border-radius: 14px;
-    border: 3px solid #f28b30;
+    border-radius: 12px;
+    border: 2px solid #f28b30;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    box-shadow: 0 4px 16px rgba(242,139,48,0.07);
-    padding: 0 0 0 0;
-    min-height: 220px;
+    box-shadow: 0 2px 8px rgba(242, 139, 48, 0.07);
+    padding: 0;
+    min-height: 160px;
     position: relative;
     overflow: hidden;
 }
@@ -140,28 +177,28 @@
     width: 100%;
     background: #f28b30;
     color: #fff;
-    font-size: 1.35rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    padding: 16px 0 16px 140px;
-    border-radius: 10px 10px 0 0;
+    padding: 10px 0 10px 90px;
+    border-radius: 8px 8px 0 0;
     z-index: 2;
     letter-spacing: 1px;
 }
 
 .seed-card img {
-    width: 120px;
-    height: 150px;
+    width: 70px;
+    height: 90px;
     object-fit: contain;
-    margin: 32px 0 32px 32px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
-    border-radius: 8px;
+    margin: 16px 0 16px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    border-radius: 6px;
     background: #fff;
     z-index: 1;
 }
 
 .seed-info {
     flex: 1;
-    padding: 48px 24px 24px 24px;
+    padding: 24px 12px 12px 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,11 +253,13 @@
         padding-top: 12px;
         padding-bottom: 12px;
     }
+
     .seed-card img {
         width: 80px;
         height: 90px;
         margin: 16px 0 16px 16px;
     }
+
     .seed-info {
         padding: 32px 8px 16px 8px;
     }
