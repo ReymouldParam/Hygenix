@@ -317,14 +317,16 @@ const seedsContainer = document.getElementById("seedsContainer");
 function renderSeeds(type) {
   const seeds = seedData[type] || [];
   seedsContainer.innerHTML = seeds.map(seed => `
+    <div class="seed-card-alignment">
       <div class="seed-card">
         <img src="${seed.img}" alt="${seed.title}" />
         <div class="seed-info">
           <h3>${seed.title}</h3>
           <p><strong>${seed.habit}</strong></p>
           ${seed.desc.map(d => `<p>› ${d}</p>`).join("")}
-          <div class="enquiry-btn">Enquiry</div>
         </div>
+      </div>
+        <div class="enquiry-btn">Enquiry</div>
       </div>
     `).join('');
 }

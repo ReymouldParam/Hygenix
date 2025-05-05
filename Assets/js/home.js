@@ -1,4 +1,21 @@
-// Navbar
+// Navbar web navigated
+document.addEventListener('DOMContentLoaded', function () {
+    const navItems = document.querySelectorAll('.nav-links a');
+    const currentPath = window.location.pathname.replace(/\/$/, ''); // remove trailing slash
+
+    navItems.forEach(item => {
+      const itemPath = new URL(item.href).pathname.replace(/\/$/, '');
+
+      if (currentPath.endsWith(itemPath)) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
+      }
+    });
+  });
+
+
+// Navbar mobile
 const toggleBtn = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 

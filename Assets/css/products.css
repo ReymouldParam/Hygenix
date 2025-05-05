@@ -3,7 +3,7 @@
     display: flex;
     align-items: flex-start;
     /* Ensure top-aligned layout */
-    width: 90%;
+    width: 95%;
     margin: auto;
     /* margin-top: 2%; */
     padding: 3%;
@@ -28,7 +28,7 @@
 
 /* Sidebar */
 .sidebar {
-    width: 320px;
+    width: 350px;
     background: #fff;
     border-radius: 18px 0 0 18px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
@@ -50,7 +50,7 @@
     font-weight: 700;
     /* letter-spacing: 1px; */
     border-radius: 18px 18px 0 0;
-    padding: 12px;
+    padding: 9px;
     position: sticky;
     top: 20px;
     /* adjust based on your header height or desired spacing */
@@ -118,6 +118,40 @@
     /* space for scrollbar */
 }
 
+/* WebKit Browsers (Chrome, Edge, Safari) */
+.content::-webkit-scrollbar {
+    width: 12px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: #f9f3ef;
+    /* lighter neutral bg */
+    border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #f28b30, #f7a85b);
+    /* subtle gradient */
+    border-radius: 10px;
+    border: 3px solid #f9f3ef;
+    /* padding effect for thumb */
+    transition: background 0.3s ease;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #e2781f, #f5973c);
+}
+
+.content::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(180deg, #cc6b1c, #e5862f);
+}
+
+/* Firefox */
+.content {
+    scrollbar-width: thin;
+    scrollbar-color: #f28b30 #f9f3ef;
+}
+
 .seeds-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -156,16 +190,25 @@
     }
 }
 
-.seed-card {
+.seed-card-alignment {
+    box-shadow: 0 2px 8px rgba(242, 139, 48, 0.07);
+    padding: 0;
     background: #fff;
     border-radius: 12px;
     border: 2px solid #f28b30;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.seed-card {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    box-shadow: 0 2px 8px rgba(242, 139, 48, 0.07);
+    /* box-shadow: 0 2px 8px rgba(242, 139, 48, 0.07);
     padding: 0;
-    min-height: 160px;
+    min-height: 160px; */
     position: relative;
     overflow: hidden;
 }
@@ -186,13 +229,13 @@
 }
 
 .seed-card img {
-    width: 70px;
-    height: 90px;
+    width: auto;
+    height: auto;
     object-fit: contain;
-    margin: 16px 0 16px 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    margin: 25px 0 16px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
     border-radius: 6px;
-    background: #fff;
+    /* background: #fff; */
     z-index: 1;
 }
 
@@ -206,7 +249,10 @@
 }
 
 .seed-info h3 {
-    display: none;
+    background: #f28b30;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
 }
 
 .seed-info p {
@@ -218,14 +264,13 @@
 
 .enquiry-btn {
     border: 2px solid #f28b30;
-    padding: 12px 0;
-    margin-top: 18px;
+    padding: 5px 0;
+    /* margin-top: 18px; */
     text-align: center;
     color: #f28b30;
     background: #fff;
-    font-weight: 700;
+    /* font-weight: 700; */
     cursor: pointer;
-    width: 100%;
     border-radius: 8px;
     font-size: 1.1rem;
     transition: all 0.2s;
@@ -233,6 +278,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+    margin: 13px;
 }
 
 .enquiry-btn:hover {

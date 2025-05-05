@@ -1,13 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <!-- fevicon -->
+    <link rel="icon" type="image/svg" href="Assets/images/website-logo.svg" />
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Global css -->
+    <link rel="stylesheet" href="Assets/css/global.css" />
+    <!--Contact page  -->
+    <link rel="stylesheet" href="Assets/css/contact.css" />
 </head>
+
 <body>
     <div>
-        Contact Us
+        <header class="navbar">
+            <div class="logo">
+                <img src="Assets/images/website-logo.svg" alt="Hygenix Seeds Logo">
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+
+            <nav class="nav-links">
+                <a href="./index.html" class="active">Home</a>
+                <a href="./about-us.html">About Us</a>
+                <a href="./R-and-D.html">R&amp;D</a>
+                <div class="dropdown">
+                    <a href="./products.html">Products</a>
+                </div>
+                <!-- <a href="#">Gallery</a> -->
+                <a href="#" class="contact-us">Contact Us</a>
+            </nav>
+
+            <div class="contact-button">
+                <a href="./contact-page.html">Contact Us <span>&#8599;</span></a>
+            </div>
+        </header>
+        <!-- section1 -->
+        <section class="contact-incharge-section">
+            <h1 class="contact-heading">
+                GET IN TOUCH
+            </h1>
+            <p class="contact-subheading">
+                For business, product related enquiries and career opportunities you may <strong>Contact Us</strong>
+            </p>
+
+            <div class="incharge-card">
+                <h2 class="incharge-title">Zonal/State Incharge</h2>
+
+                <div class="incharge-grid">
+                    <!-- Each contact item -->
+                    <div class="incharge-item">
+                        <div class="region">Haryana/Punjab</div>
+                        <div class="phone">
+                            <i class="fas fa-phone icon"></i> +91 -89789 55678
+                        </div>
+                    </div>
+
+                    <div class="incharge-item">
+                        <div class="region">Uttar Pradesh</div>
+                        <div class="phone">
+                            <i class="fas fa-phone icon"></i> +91 -89789 55678
+                        </div>
+                    </div>
+
+                    <div class="incharge-item">
+                        <div class="region">Bihar</div>
+                        <div class="phone">
+                            <i class="fas fa-phone icon"></i> +91 -89789 55678
+                        </div>
+                    </div>
+
+                    <div class="incharge-item">
+                        <div class="region">Maharastra, MP & Gujrat</div>
+                        <div class="phone">
+                            <i class="fas fa-phone icon"></i> +91 -89789 55678
+                        </div>
+                    </div>
+
+                    <div class="incharge-item">
+                        <div class="region">Chatishgarh/Odisha</div>
+                        <div class="phone">
+                            <i class="fas fa-phone icon"></i> +91 -89789 55678
+                        </div>
+                    </div>
+
+                    <div class="incharge-item">
+                        <div class="region">Karnataka</div>
+                        <div class="phone">
+                            <i class="fas fa-phone icon"></i> +91 -89789 55678
+                        </div>
+                    </div>
+
+                    <div class="incharge-item">
+                        <div class="region">AP/Telangana</div>
+                        <div class="phone">
+                            <i class="fas fa-phone icon"></i> +91 -89789 55678
+                        </div>
+                    </div>
+
+                    <div class="incharge-item">
+                        <div class="region">Jharkhand</div>
+                        <div class="phone">
+                            <i class="fas fa-phone icon"></i> +91 -89789 55678
+                        </div>
+                    </div>
+
+                    <div class="incharge-item">
+                        <div class="region">Rajasthan</div>
+                        <div class="phone">
+                            <i class="fas fa-phone icon"></i> +91 -89789 55678
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section2 -->
+        <section class="ask-question-section">
+            <div class="form-container">
+                <div class="left-image-area">
+                    <img src="Assets/images/all-vegitables-2.svg" alt="Vegetables" />
+                </div>
+                <div class="right-form-area">
+                    <h2>Ask Me Question</h2>
+                    <p>If You Have Any Questions, You Can Contact Us. <br /> Please, Fill Out the Form Below.</p>
+
+                    <form>
+                        <div class="row">
+                            <input type="text" placeholder="First Name" required />
+                            <input type="text" placeholder="Last Name" required />
+                        </div>
+                        <div class="row">
+                            <input type="tel" placeholder="Phone" required />
+                            <input type="email" placeholder="Email" required />
+                        </div>
+                        <textarea placeholder="Message" rows="3" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer-section">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h3>Corporate Office</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Plot No 18, H. No-8-63/1, First Floor<br>
+                        Near Renova Hospital<br>
+                        Jeedimetla, NH-44, Medchal Road<br>
+                        Secunderabad 500067, Telangana INDIA</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> +91 89789 55678</p>
+                    <p><i class="fas fa-envelope"></i> yaaganti@gmail.com</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Socials Links</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="privacy-policy">Privacy Policy</p>
+                <p class="copyright">
+                    © Copyright 2024 HARLAL SEEDS PRIVATE LIMITED. All rights reserved.
+                </p>
+            </div>
+        </footer>
     </div>
+    <script src="Assets/js/home.js"></script>
 </body>
+
 </html>
