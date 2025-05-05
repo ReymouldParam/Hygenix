@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Hygenix Seeds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Global css -->
+    <link rel="stylesheet" href="Assets/css/global.css" />
+    <!-- Products css -->
+    <link rel="stylesheet" href="./Assets/css/products.css"/>
+</head>
+
+<body>
+    <div>
+        <header class="navbar">
+            <div class="logo">
+                <img src="Assets/images/website-logo.svg" alt="Hygenix Seeds Logo">
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">R&amp;D</a>
+                <div class="dropdown">
+                    <a href="#" class="active">Products</a>
+                </div>
+                <a href="#">Gallery</a>
+                <a href="#" class="contact-us">Contact Us</a>
+            </nav>
+
+            <div class="contact-button">
+                <a href="#">Contact Us <span>&#8599;</span></a>
+            </div>
+        </header>
+
+        <div class="container">
+            <aside class="sidebar">
+                <h2>OUR PRODUCTS</h2>
+                <ul id="productList">
+                    <li class="active" data-type="Tomato">
+                        <img src="Assets/images/products/tomato.png" alt="Tomato"/>
+                        <span>Tomato</span>
+                    </li>
+                    <li data-type="Hot Pepper">
+                        <img src="Assets/images/products/pepper.png" alt="Hot Pepper"/>
+                        <span>Hot Pepper</span>
+                    </li>
+                    <li data-type="Capsicum">
+                        <img src="Assets/images/products/capsicum.png" alt="Capsicum"/>
+                        <span>Capsicum</span>
+                    </li>
+                    <li data-type="Watermelon">
+                        <img src="Assets/images/products/watermelon.png" alt="Watermelon"/>
+                        <span>Watermelon</span>
+                    </li>
+                    <li data-type="Okra">
+                        <img src="Assets/images/products/okra.png" alt="Okra"/>
+                        <span>Okra</span>
+                    </li>
+                    <li data-type="Cucumber">
+                        <img src="Assets/images/products/cucumber.png" alt="Cucumber"/>
+                        <span>Cucumber</span>
+                    </li>
+                    <li data-type="Bottle Gourd">
+                        <img src="Assets/images/products/bottle-gourd.png" alt="Bottle Gourd"/>
+                        <span>Bottle Gourd</span>
+                    </li>
+                    <li data-type="Bitter Gourd">
+                        <img src="Assets/images/products/bitter-gourd.png" alt="Bitter Gourd"/>
+                        <span>Bitter Gourd</span>
+                    </li>
+                    <li data-type="Sponge Gourd">
+                        <img src="Assets/images/products/sponge-gourd.png" alt="Sponge Gourd"/>
+                        <span>Sponge Gourd</span>
+                    </li>
+                    <li data-type="Ridge Gourd">
+                        <img src="Assets/images/products/ridge-gourd.png" alt="Ridge Gourd"/>
+                        <span>Ridge Gourd</span>
+                    </li>
+                </ul>
+            </aside>
+        
+            <main class="content">
+                <div id="seedsContainer" class="seeds-list">
+                    <!-- Seed cards will be dynamically inserted here -->
+                </div>
+            </main>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer-section">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h3>Corporate Office</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Plot No 18, H. No-8-63/1, First Floor<br>
+                        Near Renova Hospital<br>
+                        Jeedimetla, NH-44, Medchal Road<br>
+                        Secunderabad 500067, Telangana INDIA</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> +91 89789 55678</p>
+                    <p><i class="fas fa-envelope"></i> yaaganti@gmail.com</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Socials Links</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="privacy-policy">Privacy Policy</p>
+                <p class="copyright">
+                    © Copyright 2024 HARLAL SEEDS PRIVATE LIMITED. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="./Assets/js/products.js"></script>
+</body>
+
+</html>
