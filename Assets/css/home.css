@@ -251,7 +251,7 @@
         height: auto;
         position: relative;
         margin-top: 0;
-        top: 30px;
+        top: 5px;
     }
 
     .hero-text h1 {
@@ -590,20 +590,20 @@
     }
 
     .hero-text h1 {
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 700;
         color: #1a3b22;
         margin-bottom: 5px;
         /* line-height: 1.2; */
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     .hero-text p {
         font-size: 16px;
         color: #555;
         max-width: 700px;
-        margin: 0 auto 10px auto;
-        padding-bottom: 5px;
+        margin: 0 auto 0px auto;
+        padding-bottom: 0px;
     }
 
     .hero-gallery {
@@ -643,7 +643,7 @@
 
     .hero-text h1 {
         font-size: 48px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
 
     .hero-text p {
@@ -654,7 +654,7 @@
 
     .image-grid {
         max-width: 82%;
-        gap: 25px;
+        gap: 5px;
     }
 
     .image-grid img {

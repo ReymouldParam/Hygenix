@@ -43,7 +43,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: #000;
-    font-size: 14px;
+    font-size: 18px;
     position: relative;
 }
 
@@ -74,7 +74,7 @@ body {
     padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -97,13 +97,23 @@ body {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        padding: 0px 40px;
+        justify-content: space-between;
+    }
+
     .menu-toggle {
         display: block;
+        color: #000;
+    }
+
+    .logo img {
+        height: 35px;
     }
 
     .nav-links {
         position: absolute;
-        top: 70px;
+        top: 55px;
         left: 0;
         background: white;
         width: 100%;
@@ -241,21 +251,24 @@ body {
 
     .footer-column {
         width: 100%;
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     .footer-column h3 {
         font-size: 18px;
+        margin: 0;
     }
 
     .footer-column p {
         font-size: 14px;
+        margin: 0;
     }
 
     .social-icons {
         display: flex;
         gap: 15px;
         justify-content: center;
+        margin: 0;
     }
 
     .footer-bottom {

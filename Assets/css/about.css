@@ -1,7 +1,7 @@
 .our-story-section {
   background-color: #f5f6f6;
   padding: 60px 40px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins';
   padding-top: 5%;
   padding-left: 10%;
   padding-right: 8%;
@@ -50,23 +50,6 @@
   /* border-radius: 16px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1); */
 
-}
-
-/* mobile responsse */
-@media (max-width: 768px) {
-  .our-story-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .our-story-text {
-    text-align: left;
-  }
-
-  .our-story-image {
-    margin-top: 30px;
-  }
 }
 
 .divider {
@@ -128,4 +111,222 @@
   /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
 }
 
-/*  */
+/* Responsoveness  */
+/* Full HD and Retina Macs (1920px and up) */
+@media (min-width: 1920px) {
+
+
+  .our-story-section {
+    background-color: #f5f6f6;
+    padding: 60px 60px;
+    font-family: 'Poppins';
+    padding-top: 5%;
+    padding-left: 12%;
+    padding-right: 8%;
+    padding-bottom: 20px;
+  }
+
+  .our-story-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  .our-story-text {
+    flex: 2;
+    color: #1e1e1e;
+    margin-top: 2%;
+  }
+
+  .our-story-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+  }
+
+  .our-story-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .our-story-image {
+    flex: 1;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .our-story-image img {
+    width: 100%;
+    max-width: 250px;
+    height: 50%;
+    /* border: 4px solid #f26c1f; /* orange border */
+    /* border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); */
+
+  }
+
+  .divider {
+    border: none;
+    border-top: 2px solid #EF7F1B;
+    width: 82%;
+    margin: auto;
+    z-index: 5;
+
+    /* margin: 5px auto; */
+  }
+
+  /* our vision and mission */
+  .vision-mission-section {
+    background-color: #f5f6f6;
+    padding: 20px 200px;
+    font-family: 'Poppins';
+  }
+
+  .vision-mission-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  .vision-mission-row.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .vision-mission-text {
+    flex: 1;
+  }
+
+  .vision-mission-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin-bottom: 16px;
+  }
+
+  .vision-mission-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+  }
+
+  .vision-mission-image {
+    flex: 1;
+    max-width: 460px;
+  }
+
+  .vision-mission-image img {
+    width: 100%;
+    /* border: 4px solid #f26c1f; */
+    border-radius: 14px;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+  }
+
+}
+
+/* Standard Desktop and HD (1200px to 1919px) */
+/* Already covered in your base styles */
+
+/* Tablets and Small Laptops (769px to 1199px) */
+@media (max-width: 1199px) {
+  .our-story-section {
+    padding: 40px 40px;
+  }
+
+  .vision-mission-section {
+    padding: 40px 40px;
+  }
+
+  .vision-mission-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vision-mission-text {
+    padding-top: 20px;
+    text-align: left;
+  }
+
+  .vision-mission-row.reverse {
+    flex-direction: column;
+  }
+
+  .our-story-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .our-story-text {
+    text-align: left;
+    width: 100%;
+  }
+
+  .our-story-image {
+    margin-top: 30px;
+  }
+
+  .our-story-image img,
+  .vision-mission-image img {
+    max-width: 280px;
+  }
+}
+
+/* Mobile Devices (up to 768px) */
+@media (max-width: 768px) {
+
+  .our-story-section,
+  .vision-mission-section {
+    padding: 10px 20px;
+    margin-top: 50px;
+  }
+
+  .our-story-text h2,
+  .vision-mission-text h2 {
+    font-size: 20px;
+  }
+
+  .our-story-text p,
+  .vision-mission-text p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .divider {
+    width: 90%;
+  }
+
+  .our-story-image img,
+  .vision-mission-image img {
+    max-width: 220px;
+    height: auto;
+  }
+}
+
+/* Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+
+  .our-story-text h2,
+  .vision-mission-text h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .our-story-text p,
+  .vision-mission-text p {
+    font-size: 13px;
+  }
+
+  .our-story-image img,
+  .vision-mission-image img {
+    max-width: 100%;
+    margin-top: 0px;
+  }
+}

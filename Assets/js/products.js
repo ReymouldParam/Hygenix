@@ -326,7 +326,7 @@ function renderSeeds(type) {
           ${seed.desc.map(d => `<p>› ${d}</p>`).join("")}
         </div>
       </div>
-        <div class="enquiry-btn">Enquiry</div>
+       <a href="./contact-page.html" style="text-decoration:none"> <div class="enquiry-btn">Enquiry</div></a>
       </div>
     `).join('');
 }
