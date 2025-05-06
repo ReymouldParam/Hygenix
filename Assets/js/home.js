@@ -4,15 +4,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const currentPath = window.location.pathname.replace(/\/$/, ''); // remove trailing slash
 
     navItems.forEach(item => {
-      const itemPath = new URL(item.href).pathname.replace(/\/$/, '');
+        const itemPath = new URL(item.href).pathname.replace(/\/$/, '');
 
-      if (currentPath.endsWith(itemPath)) {
-        item.classList.add('active');
-      } else {
-        item.classList.remove('active');
-      }
+        if (currentPath.endsWith(itemPath)) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
     });
-  });
+});
 
 
 // Navbar mobile
@@ -55,11 +55,11 @@ let vegetableCarouselIndex = 0;
 
 // Vegetable images
 const vegetableImages = {
-    tomato: ['Assets/images/life-cycle-1.png', 'Assets/images/life-cycle-2.png', 'Assets/images/life-cycle-3.png', 'Assets/images/life-cycle-4.png'],
-    redchilli: ['Assets/images/red-chilli.png', 'Assets/images/life-cycle-2.png', 'Assets/images/life-cycle-3.png', 'Assets/images/life-cycle-4.png'],
-    capsicum: ['Assets/images/capsicum.png', 'Assets/images/life-cycle-2.png', 'Assets/images/life-cycle-3.png', 'Assets/images/life-cycle-4.png'],
-    watermelon: ['Assets/images/whatermelon.png', 'Assets/images/life-cycle-2.png', 'Assets/images/life-cycle-3.png', 'Assets/images/life-cycle-4.png'],
-    okra: ['Assets/images/okra.png', 'Assets/images/life-cycle-2.png', 'Assets/images/life-cycle-3.png', 'Assets/images/life-cycle-4.png']
+    tomato: ['Assets/images/content-img1.png', 'Assets/images/content-img2.png', 'Assets/images/life-cycle-4.png'],
+    redchilli: ['Assets/images/content-img1.png', 'Assets/images/content-img2.png', 'Assets/images/life-cycle-4.png'],
+    capsicum: ['Assets/images/content-img1.png', 'Assets/images/content-img2.png', 'Assets/images/life-cycle-4.png'],
+    watermelon: ['Assets/images/content-img1.png', 'Assets/images/content-img2.png', 'Assets/images/life-cycle-4.png'],
+    okra: ['Assets/images/content-img1.png', 'Assets/images/content-img2.png', 'Assets/images/life-cycle-4.png']
 };
 
 function loadCarousel(images) {
