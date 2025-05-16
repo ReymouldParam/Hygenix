@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $phone = $_POST['phone'];
     $message = $_POST['message'];
 
-    $to = "yaaganti@gmail.com";
+    $to = "naresh.narnapati@reymould.com";
     $subject = "Email enquiry from Hygenixseeds.com website";
     $body = "Name: $firstName $lastName\nEmail: $email\nPhone: $phone\nMessage:\n$message";
 
