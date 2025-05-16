@@ -137,16 +137,17 @@
                     <h2>Ask Me Question</h2>
                     <p>If You Have Any Questions, You Can Contact Us. <br /> Please, Fill Out the Form Below.</p>
 
-                    <form>
+                    <form action="email.php" method="POST">
                         <div class="row">
-                            <input type="text" placeholder="First Name" required />
-                            <input type="text" placeholder="Last Name" required />
+                            <input name="firstName" type="text" placeholder="First Name" required />
+                            <input name="lastName" type="text" placeholder="Last Name" required />
                         </div>
                         <div class="row">
-                            <input type="tel" placeholder="Phone" required />
-                            <input type="email" placeholder="Email" required />
+                            <input name="phone" type="tel" placeholder="Phone" required />
+                            <input name="email" type="email" placeholder="Email" required />
                         </div>
-                        <textarea id="message" placeholder="Message" rows="3" required maxlength="300"></textarea>
+                        <textarea name="message" id="message" placeholder="Message" rows="3" required
+                            maxlength="300"></textarea>
                         <small id="charCount">300 remaining</small>
                         <button type="submit">Send Message</button>
                     </form>
@@ -187,9 +188,17 @@
                 </p>
             </div>
         </footer>
+        <div id="popup-message" class="popup">
+            <h2 id="popup-heading" class="pop-up-heading"></h2>
+            <p id="popup-para" class="pop-up-para"></p>
+            <button id="close-popup" class="close-btn">Close</button>
+        </div>
+
     </div>
+
     <script src="Assets/js/home.js"></script>
     <script src="Assets/js/contact.js"></script>
+    <script src="Assets/js/email.js"></script>
 </body>
 
 </html>
