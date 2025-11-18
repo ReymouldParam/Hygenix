@@ -1,24 +1,108 @@
 const seedData = {
   "Tomato": [
     {
-      title: "IRA – HY 301",
+      title: "IRA (HY-301)",
       img: "Assets/images/Product-pack.svg",
-      habit: "Plant Habit: Semi Determinate",
       desc: [
-        "Flat round fruits with uniform green colour to deep red when matured.",
-        "Average fruit weight is 100–110 gms with excellent firmness."
+        "Suitable for all seasons.",
+        "Semi-determinate plant with dark green foliage.",
+        "Medium, dark red high round fruits weighing 90–100 g.",
+        "Firm, uniform fruits with excellent shelf-life.",
+        "Maturity in 65–70 days DAT.",
+        "Intermediate tolerance to ToLCV, Tospo virus, early blight, late blight.",
+        "High-yielding hybrid."
       ]
     },
     {
-      title: "BOXER – HY – 304",
+      title: "RUBY (HY-302)",
       img: "Assets/images/Product-pack.svg",
-      habit: "Plant Habit: Semi Determinate",
       desc: [
-        "Flat round fruits with uniform green colour to deep red when matured.",
-        "Average fruit weight is 100–110 gms with excellent firmness."
+        "Suitable for all seasons.",
+        "Flat round, firm fruits weighing 90–100 g.",
+        "Maturity in 60–65 DAT.",
+        "Intermediate tolerant to ToLCV and good heat set.",
+        "Good yielding hybrid.",
+        "Suitable for long distance transportation."
+      ]
+    },
+    {
+      title: "SARDHAR (HY-304)",
+      img: "Assets/images/Product-pack.svg",
+      desc: [
+        "Suitable for all seasons.",
+        "Semi-determinate plant with dark green foliage.",
+        "Flat to high round deep red glossy fruits weighing 80–100 g.",
+        "Firm, uniform fruits with excellent shelf-life.",
+        "Maturity in 70–75 DAT.",
+        "Intermediate tolerance to ToLCV, Tospo virus, early blight, late blight.",
+        "High-yielding hybrid."
+      ]
+    },
+    {
+      title: "GEM (HY-303)",
+      img: "Assets/images/Product-pack.svg",
+      desc: [
+        "Suitable for all seasons.",
+        "Semi-determinate plant with dark green foliage.",
+        "Flat to high round deep red glossy fruits weighing 80–100 g.",
+        "Firm, uniform fruits with excellent shelf-life.",
+        "Maturity in 70–75 DAT.",
+        "Intermediate tolerance to ToLCV, Tospo virus, early blight, late blight.",
+        "High-yielding hybrid."
+      ]
+    },
+    {
+      title: "COBRA-25 (HY-306)",
+      img: "Assets/images/Product-pack.svg",
+      desc: [
+        "Suitable for all seasons.",
+        "Semi-determinate, vigorous plant with good branching and dark green foliage.",
+        "Oval saladette red fruits weighing 90–110 g.",
+        "Firm fruit with uniform colour.",
+        "Maturity in 60–70 DAT.",
+        "Intermediate tolerance to early blight, late blight and ToLCV.",
+        "High-yielding hybrid."
+      ]
+    },
+    {
+      title: "JAGUAR (HY-307)",
+      img: "Assets/images/Product-pack.svg",
+      desc: [
+        "Suitable for all seasons.",
+        "Strong, vigorous plants with good foliage cover.",
+        "Large red saladette, firm fruits weighing 90–110 g.",
+        "Excellent fruit setting and heat set, cluster-bearing type.",
+        "Maturity in 70 DAT.",
+        "Intermediate tolerant to TyLCV and foliar diseases."
+      ]
+    },
+    {
+      title: "RED HEART (HY-308)",
+      img: "Assets/images/Product-pack.svg",
+      desc: [
+        "Suitable for all seasons.",
+        "Semi-determinate plants.",
+        "Fruits oval–saladette type and firm weighing 110–120 g.",
+        "Light green shoulders, deep red on maturity.",
+        "Maturity in 65–70 DAT.",
+        "Intermediate tolerance to TyLCV, Tospo virus, early blight, late blight.",
+        "Suitable for long shipping and export."
+      ]
+    },
+    {
+      title: "DEVA (HY-308)",
+      img: "Assets/images/Product-pack.svg",
+      desc: [
+        "Tall, semi-determinate, vigorous plants with good foliage cover.",
+        "Flat round, firm, acidic fruits with green shoulder.",
+        "Uniform fruits weighing 90–100 g.",
+        "Attractive fruit size and shape.",
+        "Maturity in 62–67 DAT.",
+        "Intermediate tolerant to ToLCV."
       ]
     }
-  ],
+  ]
+  ,
   "Hot Pepper": [
     {
       title: "HOT PEPPER 101",
@@ -322,7 +406,6 @@ function renderSeeds(type) {
         <img src="${seed.img}" alt="${seed.title}" />
         <div class="seed-info">
           <h3>${seed.title}</h3>
-          <p><strong>${seed.habit}</strong></p>
           ${seed.desc.map(d => `<p>› ${d}</p>`).join("")}
         </div>
       </div>
