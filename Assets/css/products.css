@@ -418,9 +418,10 @@
 /* HD (1280x720) */
 @media (min-width: 1350px) and (max-width: 1919px) {
     .products-flex-wrapper {
-        width: 90%;
+        width: 95%;
         padding: 2.5%;
         gap: 18px;
+        margin-top: 2%;
     }
 
     .container {
