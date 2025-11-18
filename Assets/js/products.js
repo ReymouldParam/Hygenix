@@ -855,7 +855,7 @@ function renderSeeds(type) {
         <img src="${seed.img}" alt="${seed.title}" />
         <div class="seed-info">
           <h3>${seed.title}</h3>
-          ${seed.desc.map(d => `<p>› ${d}</p>`).join("")}
+          ${seed.desc.map(d => `<p> <i class="fa-solid fa-angles-right" style="color:#f28b30; margin-right:0px;"></i> ${d}</p>`).join("")}
         </div>
       </div>
      
