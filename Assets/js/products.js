@@ -125,7 +125,7 @@ const seedData = {
       desc: [
         "Suitable for all seasons.",
         "Compact plant type.",
-        "Slender fruits, intermediate surface, green to bright red, high pungency.",
+        "Slender fruits, intermediate surface, green fruits turn bright red, high pungency.",
         "Fruits 9–10 cm long, 0.7–0.8 cm diameter.",
         "Maturity in 60–70 DAT, 130–140 days duration.",
         "Intermediate tolerance to ChLCV and CMV.",
@@ -166,7 +166,7 @@ const seedData = {
       desc: [
         "Suitable for all seasons.",
         "Tall, spreading, vigorous plants.",
-        "Long, cayenne-shaped, medium-wrinkled fruits, green to carpet bright red, medium pungency (35,000–40,000 SHU).",
+        "Long, cayenne-shaped, medium-wrinkled fruits, green turns carpet bright red, medium pungency (35,000–40,000 SHU).",
         "Fruits 15.5 cm long, 1.2 cm diameter.",
         "Maturity in 90 DAT.",
         "Intermediate tolerance to sucking pests and ChLCV.",
@@ -198,7 +198,7 @@ const seedData = {
         "Fruits 14–15 cm long, 1.5 cm diameter.",
         "Maturity in 85–90 DAT.",
         "Intermediate tolerance to bacterial wilt and CMV.",
-        "Red-fruit purpose, high-yielding hybrid."
+        "Red-fruit purpose with good quality and high yielding hybrid."
       ]
     },
     {
@@ -278,7 +278,7 @@ const seedData = {
       desc: [
         "Suitable for all seasons.",
         "Semi-erect plant type.",
-        "Medium-long, slender fruits, light green to deep red, medium pungency.",
+        "Medium-long, slender fruits, light green to deep red, dual-purpose, medium pungency.",
         "Fruits 10–12 cm long, 1.3–1.5 cm diameter.",
         "Green harvest in 60–70 days, red harvest in 95–100 days.",
         "Intermediate tolerance to heat and ChLCV.",
@@ -292,7 +292,7 @@ const seedData = {
       desc: [
         "Suitable for Kharif season.",
         "Semi-erect plant type.",
-        "Slender fruits with intermediate surface, light green to deep red, medium pungency.",
+        "Slender, intermediate-surfaced fruits, light green to deep red, medium pungency.",
         "Fruits 9–10 cm long, 1.2 cm diameter.",
         "Maturity in 60–70 DAT.",
         "Intermediate tolerance to bacterial wilt.",
@@ -359,9 +359,9 @@ const seedData = {
         "Strong, vigorous vines with excellent branching.",
         "Gynoecious flowering habit.",
         "Dark mottle green uniform, cylindrical fruits.",
-        "Fruits 20–22 cm long, 3–4 cm diameter, 250–300 g weight.",
+        "Fruits 20–22 cm long, 3–4 cm Diameter, 250–300 g weight.",
         "Crispy fruits with pleasant, non-bitter taste.",
-        "High-yielding hybrid with good crop longevity."
+        "High-yielding hybrid, good crop longevity."
       ]
     },
     {
@@ -369,9 +369,9 @@ const seedData = {
       img: "Assets/images/cucumber/mc.png",
       habit: "Plant Habit: Strong, dense vine",
       desc: [
-        "Suitable for all seasons.",
-        "Strong, dense, vigorous vine type.",
-        "Uniform fruits with smooth rind and yellow-striped green colour.",
+        "Suitable for all the seasons.",
+        "Strong, dense, and vigorous vine type.",
+        "Uniform fruits with smooth rind, yellow-striped green colour.",
         "Fruit weight 150–160 g.",
         "First picking starts around 55–60 DAS.",
         "Early maturity and good fruit quality."
@@ -385,11 +385,11 @@ const seedData = {
       habit: "Plant Habit: Strong vine",
       desc: [
         "Small-seeded, suitable for open-field cultivation.",
-        "Globe-shaped fruits with medium green rind and deep green stripes.",
-        "Dark red, crisp flesh with TSS 14–16%, weighing 4–6 kg.",
+        "Globe-shaped fruits, medium green rind with deep green stripes.",
+        "Dark red, crisp, TSS 14–16% and attractive flesh, weighs 4–6 kg.",
         "Heavy and concentrated fruit setting.",
         "Early maturing, harvest in 65–70 days.",
-        "Intermediate tolerance to Co:1."
+        "Intermediate Tolerance to Co:1."
       ]
     },
     {
@@ -397,9 +397,9 @@ const seedData = {
       img: "Assets/images/water melon/hulk.png",
       habit: "Plant Habit: Strong vine",
       desc: [
-        "Small-segment hybrid suited for open-field cultivation.",
-        "Globe-shaped fruits with medium green rind and deep green stripes.",
-        "Dark red, crisp flesh with TSS 14–16%, weighing 4–6 kg.",
+        "Small segment suited for open-field cultivation.",
+        "Fruits are globe-shaped, medium green rind marked by deep green stripes.",
+        "Dark red, crisp, TSS 14–16% and attractive Flesh weighs 4–6 kg.",
         "Concentrated and heavy fruit setting.",
         "Maturity in 70–75 days.",
         "Intermediate tolerance to Co:1."
@@ -411,11 +411,11 @@ const seedData = {
       habit: "Plant Habit: Strong, vigorous vine",
       desc: [
         "Excellent, strong vines.",
-        "Solid red-fleshed fruits.",
-        "Extra sweet flesh with TSS 15–16%, weighing 4–6 kg.",
+        "Solid, red-fleshed fruits.",
+        "Extra sweet TSS 15–16%, weighs 4–6 kg.",
         "Maturity in 65–70 DAT.",
-        "Prolific fruit setting with good yield.",
-        "Strong rind suitable for long-distance transport."
+        "Good yield Hybrid and prolific fruit setting.",
+        "Strong rind ensures long-distance transport."
       ]
     }
   ],
@@ -425,10 +425,10 @@ const seedData = {
       img: "Assets/images/bottle gourd/arun.png",
       habit: "Plant Habit: Vigorous",
       desc: [
-        "Attractive green fruits.",
-        "Fruits 35–40 cm long.",
-        "High-yielding hybrid.",
-        "Long shelf-life.",
+        "Attractive green Fruits.",
+        "Fruit 35–40 cm long.",
+        "High yielding hybrid.",
+        "Longer shelf-life.",
         "Suitable for long-distance transport."
       ]
     },
@@ -437,9 +437,9 @@ const seedData = {
       img: "Assets/images/bottle gourd/ria.png",
       habit: "Plant Habit: Vigorous and sturdy",
       desc: [
-        "Vigorous plants with healthy and sturdy habit.",
-        "Cylindrical fruits, attractive green in colour.",
-        "Fruits 20–25 cm long, weighing 0.8–1.2 kg.",
+        "Vigorous Plants with healthy and sturdy habit.",
+        "Fruits are cylindrical, attractive green in colour.",
+        "Fruit 20–25 cm long, 0.8 to 1.2 kg weight.",
         "Maturity in 55–60 days."
       ]
     }
@@ -464,12 +464,12 @@ const seedData = {
       img: "Assets/images/bitter gourd/mandana.png",
       habit: "Plant Habit: Strong, vigorous",
       desc: [
-        "Strong vigorous plants.",
-        "Dark green fruits.",
+        "Strong vigorous Plants.",
+        "Dark green Colour fruits.",
         "Fruits 12–14 cm long.",
         "Maturity in 52–55 days.",
-        "Intermediate tolerance to LCV and PM.",
-        "Very high-yielding hybrid."
+        "Intermediate Tolerance to LCV and PM.",
+        "Very high yielding hybrid."
       ]
     },
     {
@@ -530,10 +530,10 @@ const seedData = {
       desc: [
         "Strong, fast-growing vines with healthy growth.",
         "Elongated, moderately thick fruits of deep green colour.",
-        "Average fruit length 38–42 cm.",
+        "Average fruit length about 38–42 cm.",
         "Ready for first picking in 45–50 DAS.",
         "Pronounced ridges support better transport and storage.",
-        "Intermediate resistance to Gemini Virus and Downy Mildew."
+        "Intermediate tolerance to Gemini Virus and Downy Mildew."
       ]
     }
   ],
@@ -585,13 +585,13 @@ const seedData = {
       img: "Assets/images/okra/warrior.png",
       habit: "Plant Habit: Medium to tall, vigorous",
       desc: [
-        "Medium to tall, vigorous plant habit.",
+        "Medium to Tall, vigorous plant habit.",
         "Short internodes.",
         "Very dark green, glossy fruits.",
-        "Fruits 14–16 cm long.",
-        "Intermediate tolerance to YVMV, ELCV, and heat set.",
-        "Maturity in 43–48 days.",
-        "Suitable for long-distance transportation with excellent quality."
+        "Fruits 14 to 16 cm long.",
+        "Intermediate Tolerance to YVMV, ELCV and heat set.",
+        "Maturity in 43 to 48 days.",
+        "Suitable for long distance transportation and excellent quality."
       ]
     },
     {
@@ -601,9 +601,9 @@ const seedData = {
       desc: [
         "Suitable for all seasons.",
         "Medium-dwarf hybrid.",
-        "Short internodes.",
-        "Attractive dark green fruits.",
-        "Intermediate tolerance to YVMV and ELCV."
+        "Short internode.",
+        "Attractive dark green colour fruits.",
+        "Intermediate Tolerance to YVMV and ELCV."
       ]
     },
     {
@@ -611,10 +611,10 @@ const seedData = {
       img: "Assets/images/okra/sainik.png",
       habit: "Plant Habit: Medium tall",
       desc: [
-        "Medium-tall hybrid.",
+        "Medium tall hybrid.",
         "Short internodes.",
-        "Dark green fruits.",
-        "Intermediate tolerance to YVMV and ELCV."
+        "Dark green colour fruits.",
+        "Intermediate Tolerance to YVMV and ELCV."
       ]
     },
     {
@@ -622,10 +622,10 @@ const seedData = {
       img: "Assets/images/okra/nithin.png",
       habit: "Plant Habit: Medium tall",
       desc: [
-        "Medium-tall hybrid.",
+        "Medium tall hybrid.",
         "Short internodes.",
-        "Dark green fruits.",
-        "Intermediate tolerance to YVMV and ELCV."
+        "Dark green colour fruits.",
+        "Intermediate Tolerance to YVMV and ELCV."
       ]
     }
   ],
@@ -663,9 +663,9 @@ const seedData = {
         "Strong vigorous plants.",
         "Dark green pods.",
         "Pods 58–60 cm long, 8–9 mm diameter.",
-        "Brown-coloured seeds.",
-        "Maturity in 50–55 DAS.",
-        "Intermediate tolerance to MYMIV."
+        "Brown colour seeds.",
+        "Maturity 50–55 DAS.",
+        "Intermediate Tolerance to MYMIV."
       ]
     },
     {
@@ -676,9 +676,9 @@ const seedData = {
         "Strong vigorous plants.",
         "Medium green pods.",
         "Pods 55–65 cm long, 8–9 mm diameter.",
-        "Brown-coloured seeds.",
+        "Brown colour seeds.",
         "Maturity in 45–50 DAS.",
-        "Intermediate tolerance to MYMIV."
+        "Intermediate Tolerance to MYMIV."
       ]
     },
     {
@@ -718,10 +718,10 @@ const seedData = {
       desc: [
         "Strong and vigorous plants.",
         "Flat-round, uniform fruits.",
-        "Fruits weigh 4–4.5 kg.",
+        "Fruits weighs 4–4.5 kg.",
         "Light green rind turning tan at full maturity.",
         "Maturity in 75–80 days with fruit development.",
-        "Intermediate tolerance to Gemini Virus, ZYMV, PM, and DM."
+        "Intermediate Tolerance to Gemini Virus, ZYMV, PM, and DM."
       ]
     },
     {
@@ -731,9 +731,9 @@ const seedData = {
       desc: [
         "Strong and vigorous plant type.",
         "Uniform flat-round fruits.",
-        "Fruits weigh 4–5 kg.",
+        "Fruit weighs 4–5 kg.",
         "Maturity in 70–75 days.",
-        "Intermediate tolerance to Gemini Virus, ZYMV, PM, and DM."
+        "Intermediate Tolerance to Gemini Virus, ZYMV, PM, and DM."
       ]
     },
     {
@@ -743,9 +743,9 @@ const seedData = {
       desc: [
         "Dense fast-spreading vines.",
         "Flat-round fruits with bright green colour.",
-        "Fruits weigh 5–6 kg.",
+        "Fruit weighs 5–6 kg.",
         "Maturity in 80–85 DAS.",
-        "Intermediate tolerance to Gemini Virus, ZYMV, PM, and DM."
+        "Intermediate Tolerance to Gemini Virus, ZYMV, PM, and DM."
       ]
     }
   ],
@@ -757,7 +757,7 @@ const seedData = {
       desc: [
         "Suitable for Rabi season.",
         "Oval-round bulbs with pinkish-red colour.",
-        "Bulbs weigh 80–100 g.",
+        "Bulb weighs 80–100 g.",
         "Maturity in 110–120 DAT.",
         "Intermediate tolerance to pests and diseases."
       ]
@@ -767,9 +767,9 @@ const seedData = {
       img: "Assets/images/onion/dharani.png",
       habit: "Plant Habit: Strong, uniform",
       desc: [
-        "Suitable for all seasons.",
+        "Suitable for all season.",
         "Flat globe-shaped bulbs with red colour.",
-        "Bulbs weigh 90–100 g.",
+        "Bulb weighs 90–100 grams.",
         "Maturity in 90–100 DAT.",
         "Dries quickly after harvest.",
         "Suitable for fresh market use."
@@ -784,10 +784,10 @@ const seedData = {
       desc: [
         "Suitable for all seasons.",
         "Cobs are medium-sized with 16–18 rows.",
-        "Golden yellow kernels with 15–16 Brix sugar level.",
-        "Cobs 19–20 cm long, 5.5–5.8 cm diameter, weighing 650–700 g.",
+        "Golden yellow colour kernels, 15–16 Brix sugar level.",
+        "Cob 19–20 cm long, 5.5–5.8 cm diameter, weighs 650–700 g.",
         "Intermediate tolerance to Turcicum blight.",
-        "Fully covered with husk with excellent shelf life.",
+        "Fully covered with husk, excellent shelf life.",
         "Suitable for fresh use and processing markets."
       ]
     },
@@ -797,8 +797,8 @@ const seedData = {
       habit: "Plant Habit: Medium-tall, vigorous",
       desc: [
         "Medium-tall, vigorous plants with excellent uniformity.",
-        "Golden-yellow kernels on cylindrical ears.",
-        "Cobs 19–20 cm long, 5.5–5.8 cm diameter, weighing 600–750 g.",
+        "Golden-yellow kernels, Cylindrical ears.",
+        "Cob 19–20 cm long, 5.5–5.8 cm Diameter, weighs 600–750 g.",
         "Maturity in 75–80 DAS.",
         "Fully covered with husk.",
         "Rich sweetness with pleasant taste.",
@@ -815,10 +815,10 @@ const seedData = {
         "Suitable for all seasons.",
         "Tall, erect, vigorous and uniform compact plants (90–100 cm).",
         "Golden-yellow flowers.",
-        "Flower weight 20–24 g.",
-        "Flowering starts 45–50 DAT.",
+        "Flower weighs 20–24 g.",
+        "Flowering start 45–50 DAT.",
         "Excellent shelf-life.",
-        "Suitable for bedding, cut flowers, and long-distance transportation."
+        "Suitable for bedding and cut flowers, long-distance transportation."
       ]
     },
     {
@@ -829,7 +829,7 @@ const seedData = {
         "Suitable for all seasons.",
         "Tall, erect, vigorous and uniform plants (90–105 cm).",
         "Large, compact double-floret flowers with yellow colour.",
-        "Flower weight 20–22 g.",
+        "Flower weighs 20–22 g.",
         "Flowering starts 45–50 DAT.",
         "Excellent shelf-life.",
         "Suitable for cut flowers and long-distance transport."
