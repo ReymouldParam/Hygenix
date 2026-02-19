@@ -70,7 +70,7 @@ const seedData = {
       desc: [
         "Suitable for all seasons.",
         "Strong, vigorous plants with good foliage cover.",
-        "Large red saladette, firm fruits weighing 90–110 g.",
+        "Large red colour, saladette, firm fruits weighing 90–110 g.",
         "Excellent fruit setting and heat set, cluster-bearing type.",
         "Maturity in 70 DAT.",
         "Intermediate tolerant to TyLCV and foliar diseases."
@@ -152,7 +152,7 @@ const seedData = {
       desc: [
         "Suitable for all seasons.",
         "Semi-erect plant type.",
-        "Medium-long, slender fruits with intermediate surface, green to red, high pungency.",
+        "Medium-long, slender fruits, intermediate surface, green to red, high pungency.",
         "Fruits 9–10 cm long, 0.8–1 cm diameter.",
         "Maturity in 60–70 DAT.",
         "Intermediate tolerance to ChLCV.",
@@ -236,9 +236,9 @@ const seedData = {
       desc: [
         "Suitable for all seasons.",
         "Semi-erect plant type.",
-        "Long, cayenne-shaped fruits with wrinkled surface, light green to bright red, high pungency.",
+        "Fruits are long and cayenne-shaped, wrinkled surface, light green to bright red, high pungency.",
         "Fruits 12–13 cm long, 1.1 cm diameter.",
-        "Maturity in 50–55 DAT.",
+        "Maturity 50–55 DAT.",
         "Intermediate tolerance to sucking pests.",
         "High-yielding hybrid."
       ]
@@ -318,12 +318,12 @@ const seedData = {
       img: "Assets/images/cucumber/chaya.png",
       habit: "Plant Habit: Vigorous vine",
       desc: [
-        "Vigorous vine growth with excellent branching and dark green foliage.",
+        "Vigorous vine growth with excellent branching, dark green foliage.",
         "Monoecious flowering habit.",
-        "Mottle green, cylindrical fruits with blunt ends, crispy and non-bitter.",
-        "Fruits 18–20 cm long, 4 cm diameter.",
+        "Mottle green, cylindrical fruits with blunt ends, crispy, non-bitter.",
+        "Fruits 18–20 cm long, 4 cm Diameter.",
         "Intermediate tolerance to DM, PM, and CMV.",
-        "High-yielding hybrid."
+        "High yielding hybrid."
       ]
     },
     {
@@ -453,7 +453,7 @@ const seedData = {
         "Suitable for all seasons.",
         "Highly vigorous vines.",
         "Medium-long, spinny, dark green fruits.",
-        "Fruits 15–18 cm long, weighing 100–120 g.",
+        "Fruits 15–18 cm long, 100–120g weight.",
         "Maturity in 60–65 days.",
         "Intermediate tolerance to PM.",
         "High-yielding hybrid."
@@ -494,9 +494,9 @@ const seedData = {
         "Suitable for all seasons.",
         "Strong vigorous plant.",
         "Long, straight, highly uniform medium-attractive green fruits.",
-        "Fruits 40–45 cm long, weighing 200–230 g.",
+        "Fruits 40-45 cm long, weighs 200-230 g.",
         "Maturity in 40–45 days.",
-        "High-yielding hybrid."
+        "High yielding hybrid."
       ]
     },
     {
@@ -506,7 +506,7 @@ const seedData = {
       desc: [
         "Suitable for all seasons.",
         "Medium-long cylindrical fruits with deep ridges.",
-        "Fruits are green, 30–35 cm long, weighing 180–220 g.",
+        "Fruits are green, 30–35 cm in long and 180-220 g weight.",
         "First picking in 35–40 DAS."
       ]
     },
@@ -517,10 +517,10 @@ const seedData = {
       desc: [
         "Strong, long plant type.",
         "Straight, glossy green fruits.",
-        "Fruits 40–45 cm long, weighing 180–220 g.",
+        "Fruit 40–45 cm long, weighs 180-220 g.",
         "Picking starts in 40–45 DAT.",
         "Maturity in 70–75 days.",
-        "Dual-purpose, high-yielding hybrid."
+        "Dual purpose, High yielding hybrid."
       ]
     },
     {
@@ -575,9 +575,9 @@ const seedData = {
         "Tall, vigorous plant habit.",
         "Medium to short internodes.",
         "Very dark green, glossy fruits.",
-        "Fruits 14–16 cm long.",
-        "Maturity in 43–48 DAS.",
-        "Intermediate tolerance to YVMV and ELCV."
+        "Fruits 14 to 16 cm long.",
+        "Maturity 43 to 48 DAS.",
+        "Intermediate Tolerance to YVMV, ELCV."
       ]
     },
     {
