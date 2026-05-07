@@ -62,6 +62,36 @@
   /* margin: 5px auto; */
 }
 
+.mission-section {
+  background-image: url(Assets/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-content {
+    margin: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 14px;
+    height: 90px;
+    width: 980px;
+    font-style: italic;
+    text-align: center;
+} 
+
+.mission-content p {
+    margin-top: 18px;
+    color: white;
+    font-size: 30px;
+}
+
 /* our vision and mission */
 .vision-mission-section {
   background-color: #f5f6f6;
