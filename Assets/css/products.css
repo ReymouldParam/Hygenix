@@ -41,7 +41,7 @@
 }
 
 .sidebar h2 {
-    background: #111;
+    background: #f58220;
     color: #fff;
     margin: 0;
     /* padding: 1px 0 10px 35px; */
@@ -92,9 +92,10 @@
 
 .sidebar li.active {
     background: #f9f3ef;
-    border-left: 8px solid #f28b30;
+    border-left: 4px solid #f28b30;
     color: #f28b30;
     font-weight: 700;
+    padding-left: 4px;
 }
 
 .sidebar li:hover {

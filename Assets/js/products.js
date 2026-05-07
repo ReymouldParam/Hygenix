@@ -1,46 +1,8 @@
 const seedData = {
   "Tomato": [
     {
-      title: "IRA (HY-301)",
-      img: "Assets/images/Product-pack.svg",
-      desc: [
-        "Suitable for all seasons.",
-        "Semi-determinate plant with dark green foliage.",
-        "Medium, dark red high round fruits weighing 90–100 g.",
-        "Firm, uniform fruits with excellent shelf-life.",
-        "Maturity in 65–70 days DAT.",
-        "Intermediate tolerance to ToLCV, Tospo virus, early blight, late blight.",
-        "High-yielding hybrid."
-      ]
-    },
-    {
-      title: "RUBY (HY-302)",
-      img: "Assets/images/tomato/ruby.png",
-      desc: [
-        "Suitable for all seasons.",
-        "Flat round, firm fruits weighing 90–100 g.",
-        "Maturity in 60–65 DAT.",
-        "Intermediate tolerant to ToLCV and good heat set.",
-        "Good yielding hybrid.",
-        "Suitable for long distance transportation."
-      ]
-    },
-    {
       title: "SARDHAR (HY-304)",
       img: "Assets/images/tomato/sardhar.png",
-      desc: [
-        "Suitable for all seasons.",
-        "Semi-determinate plant with dark green foliage.",
-        "Flat to high round deep red glossy fruits weighing 80–100 g.",
-        "Firm, uniform fruits with excellent shelf-life.",
-        "Maturity in 70–75 DAT.",
-        "Intermediate tolerance to ToLCV, Tospo virus, early blight, late blight.",
-        "High-yielding hybrid."
-      ]
-    },
-    {
-      title: "GEM (HY-303)",
-      img: "Assets/images/tomato/gem.png",
       desc: [
         "Suitable for all seasons.",
         "Semi-determinate plant with dark green foliage.",
@@ -64,6 +26,20 @@ const seedData = {
         "High-yielding hybrid."
       ]
     },
+    {
+      title: "GEM (HY-303)",
+      img: "Assets/images/tomato/gem.png",
+      desc: [
+        "Suitable for all seasons.",
+        "Semi-determinate plant with dark green foliage.",
+        "Flat to high round deep red glossy fruits weighing 80–100 g.",
+        "Firm, uniform fruits with excellent shelf-life.",
+        "Maturity in 70–75 DAT.",
+        "Intermediate tolerance to ToLCV, Tospo virus, early blight, late blight.",
+        "High-yielding hybrid."
+      ]
+    },
+
     {
       title: "JAGUAR (HY-307)",
       img: "Assets/images/tomato/jaguar.png",
@@ -100,7 +76,32 @@ const seedData = {
         "Maturity in 62–67 DAT.",
         "Intermediate tolerant to ToLCV."
       ]
-    }
+    },
+    {
+      title: "IRA (HY-301)",
+      img: "Assets/images/Product-pack.svg",
+      desc: [
+        "Suitable for all seasons.",
+        "Semi-determinate plant with dark green foliage.",
+        "Medium, dark red high round fruits weighing 90–100 g.",
+        "Firm, uniform fruits with excellent shelf-life.",
+        "Maturity in 65–70 days DAT.",
+        "Intermediate tolerance to ToLCV, Tospo virus, early blight, late blight.",
+        "High-yielding hybrid."
+      ]
+    },
+    {
+      title: "RUBY (HY-302)",
+      img: "Assets/images/tomato/ruby.png",
+      desc: [
+        "Suitable for all seasons.",
+        "Flat round, firm fruits weighing 90–100 g.",
+        "Maturity in 60–65 DAT.",
+        "Intermediate tolerant to ToLCV and good heat set.",
+        "Good yielding hybrid.",
+        "Suitable for long distance transportation."
+      ]
+    },
   ]
   ,
   "Hot Pepper": [
@@ -109,7 +110,7 @@ const seedData = {
       img: "Assets/images/chilli/phoenix.png",
       habit: "Plant Habit: Erect",
       desc: [
-        "Suitable for all seasons.",
+        "Suitable for all seasons",
         "Erect plant with good growth habit.",
         "Slender dark green fruits turn bright red, moderately wrinkled, very high pungency.",
         "Uniform fruits, 9–10 cm long, 0.8–1 cm diameter.",
@@ -123,7 +124,7 @@ const seedData = {
       img: "Assets/images/chilli/flame.png",
       habit: "Plant Habit: Compact",
       desc: [
-        "Suitable for all seasons.",
+        "Suitable for all seasons",
         "Compact plant type.",
         "Slender fruits, intermediate surface, green fruits turn bright red, high pungency.",
         "Fruits 9–10 cm long, 0.7–0.8 cm diameter.",
@@ -133,16 +134,17 @@ const seedData = {
       ]
     },
     {
-      title: "SPARK-09 (HY-802)",
-      img: "Assets/images/chilli/spark - 9.png",
-      habit: "Plant Habit: Bushy",
+      title: "BLISS-841 (HY-841)",
+      img: "Assets/images/chilli/bliss 841.png",
+      habit: "Plant Habit: Semi-erect",
       desc: [
-        "Suitable for all seasons.",
-        "Bushy plant type.",
-        "Slender fruits with intermediate wrinkles, green to glossy red, high pungency.",
-        "Fruits 9–11 cm long, 0.9–1.1 cm diameter.",
-        "Maturity in 55–65 DAT.",
-        "Dual-purpose, high-yielding hybrid."
+        "Suitable for Kharif season",
+        "Semi-erect plant type.",
+        "Slender, intermediate-surfaced fruits, light green to deep red, medium pungency.",
+        "Fruits 9–10 cm long, 1.2 cm diameter.",
+        "Maturity in 60–70 DAT.",
+        "Intermediate tolerance to bacterial wilt.",
+        "High-yielding hybrid."
       ]
     },
     {
@@ -150,7 +152,7 @@ const seedData = {
       img: "Assets/images/chilli/shield.png",
       habit: "Plant Habit: Semi-erect",
       desc: [
-        "Suitable for all seasons.",
+        "Suitable for all seasons",
         "Semi-erect plant type.",
         "Medium-long, slender fruits, intermediate surface, green to red, high pungency.",
         "Fruits 9–10 cm long, 0.8–1 cm diameter.",
@@ -160,11 +162,24 @@ const seedData = {
       ]
     },
     {
+      title: "SPARK-09 (HY-802)",
+      img: "Assets/images/chilli/spark - 9.png",
+      habit: "Plant Habit: Bushy",
+      desc: [
+        "Suitable for all seasons",
+        "Bushy plant type.",
+        "Slender fruits with intermediate wrinkles, green to glossy red, high pungency.",
+        "Fruits 9–11 cm long, 0.9–1.1 cm diameter.",
+        "Maturity in 55–65 DAT.",
+        "Dual-purpose, high-yielding hybrid."
+      ]
+    },
+    {
       title: "PARKER (HY-806)",
       img: "Assets/images/chilli/parker.png",
       habit: "Plant Habit: Tall, spreading",
       desc: [
-        "Suitable for all seasons.",
+        "Suitable for all seasons",
         "Tall, spreading, vigorous plants.",
         "Long, cayenne-shaped, medium-wrinkled fruits, green turns carpet bright red, medium pungency (35,000–40,000 SHU).",
         "Fruits 15.5 cm long, 1.2 cm diameter.",
@@ -178,7 +193,7 @@ const seedData = {
       img: "Assets/images/chilli/hygen - 005.png",
       habit: "Plant Habit: Tall, spreading",
       desc: [
-        "Suitable for monsoon season.",
+        "Suitable for monsoon season",
         "Tall, spreading, vigorous plants with dark green foliage.",
         "Dark green fruits turn bright red when dry, medium pungency.",
         "Cayenne-shaped fruits, 10–11 cm long, 1.2 cm diameter, intermediate surface.",
@@ -192,7 +207,7 @@ const seedData = {
       img: "Assets/images/chilli/aditya 8043.png",
       habit: "Plant Habit: Robust, erect",
       desc: [
-        "Suitable for all seasons.",
+        "Suitable for all seasons",
         "Robust, erect plants with excellent vigour.",
         "Long, cayenne-shaped fruits with circular wrinkles, green to deep red, low pungency (≈15,000 SHU).",
         "Fruits 14–15 cm long, 1.5 cm diameter.",
@@ -202,11 +217,23 @@ const seedData = {
       ]
     },
     {
+      title: "BHANU (HY-815)",
+      img: "Assets/images/chilli/bhanu.png",
+      habit: "Plant Habit: Vigorous, erect",
+      desc: [
+        "Vigorous and erect plant with upright dark green fruits.",
+        "Short fruits, medium green to bright red, high pungency.",
+        "Fruits 6–7 cm long, 0.9–1.0 cm diameter.",
+        "Maturity in 70–75 DAT.",
+        "Intermediate tolerance to BW, CMV, and TMV."
+      ]
+    },
+    {
       title: "GREEN GOLD (HY-804)",
       img: "Assets/images/chilli/green gold.png",
       habit: "Plant Habit: Semi tall to bushy",
       desc: [
-        "Suitable for all seasons.",
+        "Suitable for all seasons",
         "Semi tall to bushy plant habit.",
         "Pendent, cayenne-shaped, wrinkled fruits, yellowish green to bright red, medium pungency.",
         "Fruits 14–16 cm long, 1.2 cm diameter.",
@@ -220,7 +247,7 @@ const seedData = {
       img: "Assets/images/chilli/suraksha.png",
       habit: "Plant Habit: Semi-erect",
       desc: [
-        "Suitable for all seasons.",
+        "Suitable for all seasons",
         "Semi-erect plant type.",
         "Long, cayenne-shaped, wrinkled fruits, parrot green to red, medium pungency.",
         "Fruits 14–15 cm long, 1.3–1.4 cm diameter.",
@@ -234,7 +261,7 @@ const seedData = {
       img: "Assets/images/chilli/ujwal.png",
       habit: "Plant Habit: Semi-erect",
       desc: [
-        "Suitable for all seasons.",
+        "Suitable for all seasons",
         "Semi-erect plant type.",
         "Fruits are long and cayenne-shaped, wrinkled surface, light green to bright red, high pungency.",
         "Fruits 12–13 cm long, 1.1 cm diameter.",
@@ -248,7 +275,7 @@ const seedData = {
       img: "Assets/images/chilli/royal rocket.png",
       habit: "Plant Habit: Erect",
       desc: [
-        "Suitable for all seasons.",
+        "Suitable for all seasons",
         "Erect plant type, easy picking.",
         "Short, oval, smooth fruits, green to deep red, high pungency.",
         "Fruits 4–5 cm long, 2 cm diameter.",
@@ -262,7 +289,7 @@ const seedData = {
       img: "Assets/images/chilli/agniveer.png",
       habit: "Plant Habit: Bushy",
       desc: [
-        "Suitable for all seasons.",
+        "Suitable for all seasons",
         "Bushy plant type.",
         "Slender fruits with moderate wrinkles, dark green to glossy deep red, high pungency.",
         "Fruits 8–10 cm long, 0.8–0.9 cm diameter.",
@@ -276,7 +303,7 @@ const seedData = {
       img: "Assets/images/chilli/singam.png",
       habit: "Plant Habit: Semi-erect",
       desc: [
-        "Suitable for all seasons.",
+        "Suitable for all seasons",
         "Semi-erect plant type.",
         "Medium-long, slender fruits, light green to deep red, dual-purpose, medium pungency.",
         "Fruits 10–12 cm long, 1.3–1.5 cm diameter.",
@@ -286,29 +313,87 @@ const seedData = {
       ]
     },
     {
-      title: "BLISS-841 (HY-841)",
-      img: "Assets/images/chilli/bliss 841.png",
+      title: "MAYURI (HY-830)",
+      img: "Assets/images/Mayuri.png",
       habit: "Plant Habit: Semi-erect",
       desc: [
-        "Suitable for Kharif season.",
-        "Semi-erect plant type.",
-        "Slender, intermediate-surfaced fruits, light green to deep red, medium pungency.",
-        "Fruits 9–10 cm long, 1.2 cm diameter.",
-        "Maturity in 60–70 DAT.",
-        "Intermediate tolerance to bacterial wilt.",
-        "High-yielding hybrid."
+        "Suitable for all seasons",
+        "Bushy plant type",
+        "Pendent, green fruits with smooth surface",
+        "Medium to high pungency",
+        "Fruits are 13-14 cm long, 1.7 – 1.8 cm diameter",
+        "Maturity in 55 - 60 DAT",
+        "Intermediate tolerance to ChLCV, CVMV and powdery mildew",
+        "High-yielding hybrid"
       ]
     },
     {
-      title: "BHANU (HY-815)",
-      img: "Assets/images/chilli/bhanu.png",
-      habit: "Plant Habit: Vigorous, erect",
+      title: "SHIVANI (HY-829)",
+      img: "Assets/images/chilli/Shivani.png",
+      habit: "Plant Habit: Semi-erect",
       desc: [
-        "Vigorous and erect plant with upright dark green fruits.",
-        "Short fruits, medium green to bright red, high pungency.",
-        "Fruits 6–7 cm long, 0.9–1.0 cm diameter.",
-        "Maturity in 70–75 DAT.",
-        "Intermediate tolerance to BW, CMV, and TMV."
+        "Suitable for all seasons",
+        "Semi erect plant type",
+        "Fruits with wrinkles, light green to deep red, Dual – purpose, High pungency",
+        "Fruits are 15 cm long, 1.3 cm diameter",
+        "Maturity in 56 - 70 DAT",
+        "Maturity in 55 - 60 DAT",
+        "Tolerance to ChLCV, CVMV and powdery mildew",
+        "High-yielding hybrid"
+      ]
+    },
+    {
+      title: "AADYA (HY-826)",
+      img: "Assets/images/chilli/Aadya.png",
+      habit: "Plant Habit: Semi-erect",
+      desc: [
+        "Suitable for all seasons",
+        "Semi erect plant type",
+        "Fruits with semi - wrinkles, light green to bright red, Dual – purpose",
+        "Very high pungency",
+        "Fruits are 13 -15 cm long, 1.3 cm diameter",
+        "Very Early Maturity in 45 - 55 DAT",
+        "Tolerance to ChLCV, CVMV and powdery mildew",
+        "Very high yielding hybrid"
+      ]
+    },
+    {
+      title: "SARATHI (HY-823)",
+      img: "Assets/images/chilli/Sarathi.png",
+      desc: [
+        "Suitable for all seasons",
+        "Semi spreading plant type",
+        "Firm, dark green, shiny fruits, high pungency",
+        "Fruits are 8 -10 cm long, 0.8-1 cm diameter",
+        "Very Early Maturity in 60 - 65 DAT",
+        "Intermediate Tolerance to ChLCV, CVMV and powdery mildew",
+        "Very high yielding hybrid"
+      ]
+    },
+    {
+      title: "KAVERI",
+      img: "Assets/images/chilli/Kaveri.png",
+      desc: [
+        "Suitable for all seasons",
+        "Semi spreading plant type",
+        "Firm, dark green, shiny fruits, high pungency",
+        "Fruits are 8 -10 cm long, 0.8-1 cm diameter",
+        "Very Early Maturity in 60 - 65 DAT",
+        "Intermediate Tolerance to ChLCV, CVMV and powdery mildew",
+        "Very high yielding hybrid"
+      ]
+    },
+    {
+      title: "BHARGAVI (HY-826)",
+      img: "Assets/images/chilli/Bhargavi.png",
+      desc: [
+        "Suitable for all seasons",
+        "Erect plant type",
+        "Fruits are thin, glossy, dark green, turning deep red, dual-purpose, high pungency",
+        "Fruits are 10-14 cm long",
+        "Maturity in 60-65 DAT",
+        "Tolerance to ChLCV, CVMV and powdery mildew",
+        "High yielding hybrid"
       ]
     }
   ],
