@@ -837,11 +837,6 @@ const seedData = {
     }
   ]
 
-
-
-
-
-  // Add more if needed
 };
 
 const productList = document.getElementById("productList");
@@ -858,7 +853,6 @@ function renderSeeds(type) {
           ${seed.desc.map(d => `<p> <i class="fa-solid fa-angles-right" style="color:#f28b30; margin-right:0px;"></i> ${d}</p>`).join("")}
         </div>
       </div>
-     
       </div>
     `).join('');
 }
@@ -871,6 +865,28 @@ productList.addEventListener("click", e => {
   const type = li.dataset.type;
   renderSeeds(type);
 });
+
+function initFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  const type = params.get("type");
+
+  if (type && seedData[type]) {
+    const allItems = document.querySelectorAll("#productList li");
+    allItems.forEach(el => el.classList.remove("active"));
+
+    const target = document.querySelector(`#productList li[data-type="${type}"]`);
+    if (target) {
+      target.classList.add("active");
+      target.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+    renderSeeds(type);
+  } else {
+    const defaultType = document.querySelector("#productList li.active")?.dataset.type;
+    if (defaultType) renderSeeds(defaultType);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", initFromURL);
 
 // Default load
 renderSeeds("Tomato");
