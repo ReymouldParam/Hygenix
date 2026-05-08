@@ -2,16 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Navbar web navigated
     const navItems = document.querySelectorAll('.nav-links a');
-    const currentPath = window.location.pathname.replace(/\/$/, '');
+
+    const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+
     navItems.forEach(item => {
-        const itemPath = new URL(item.href).pathname.replace(/\/$/, '');
-        if (currentPath.endsWith(itemPath)) {
+        const itemPath = new URL(item.href).pathname.replace(/\/$/, '') || '/';
+
+        if (currentPath === itemPath) {
             item.classList.add('active');
         } else {
             item.classList.remove('active');
         }
     });
-
     // NavbaR Mobile 
     const toggleBtn = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
