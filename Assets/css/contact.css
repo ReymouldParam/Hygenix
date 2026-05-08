@@ -63,7 +63,7 @@
 }
 
 .Desg-text {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .phone {
@@ -81,7 +81,7 @@
 
 /* ask me section */
 .ask-question-section {
-    background-image: url('../images/contact-page-bg.png');
+    background-image: url('../images/Contact-page-background-img-hygenix.png');
     background-size: cover;
     background-position: center;
     padding: 50px 20px;

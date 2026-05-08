@@ -134,7 +134,7 @@ const seedData = {
       ]
     },
     {
-      title: "BLISS-841 (HY-841)",
+      title: "BLISS (HY-841)",
       img: "Assets/images/chilli/bliss 841.png",
       habit: "Plant Habit: Semi-erect",
       desc: [
@@ -203,7 +203,7 @@ const seedData = {
       ]
     },
     {
-      title: "ADITYA-8043 (HY-803)",
+      title: "ADITYA (HY-803)",
       img: "Assets/images/chilli/aditya 8043.png",
       habit: "Plant Habit: Robust, erect",
       desc: [
@@ -243,7 +243,7 @@ const seedData = {
       ]
     },
     {
-      title: "SURAKSHA (HY-812)",
+      title: "SURAKSHA (HY-814)",
       img: "Assets/images/chilli/suraksha.png",
       habit: "Plant Habit: Semi-erect",
       desc: [
@@ -609,7 +609,7 @@ const seedData = {
       ]
     },
     {
-      title: "ARYA (HY-6006)",
+      title: "AARYA (HY-6006)",
       img: "Assets/images/ridge gourd/Aarya.png",
       habit: "Plant Habit: Strong, fast-growing vines",
       desc: [
@@ -619,6 +619,19 @@ const seedData = {
         "Ready for first picking in 45–50 DAS.",
         "Pronounced ridges support better transport and storage.",
         "Intermediate tolerance to Gemini Virus and Downy Mildew."
+      ]
+    },
+    {
+      title: "NAGINI (HY-6007)",
+      img: "Assets/images/ridge gourd/Nagini.png",
+      desc: [
+        "Suitable for all seasons",
+        "Strong and long plant type",
+        "Green, straight, glossy fruits",
+        "Fruits are 45-50 cm long, 4-5 cm diameter",
+        "First picking in 40-45 DAT",
+        "Tolerance to virus, downy mildew, powdery mildew",
+        "High yielding hybrid"
       ]
     }
   ],
