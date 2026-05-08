@@ -85,7 +85,7 @@ const seedData = {
         "Semi-determinate plant with dark green foliage.",
         "Medium, dark red high round fruits weighing 90–100 g.",
         "Firm, uniform fruits with excellent shelf-life.",
-        "Maturity in 65–70 days DAT.",
+        "Maturity in 65–70 DAT.",
         "Intermediate tolerance to ToLCV, Tospo virus, early blight, late blight.",
         "High-yielding hybrid."
       ]
@@ -135,7 +135,7 @@ const seedData = {
     },
     {
       title: "BLISS (HY-841)",
-      img: "Assets/images/chilli/bliss 841.png",
+      img: "Assets/images/chilli/Bliss.png",
       habit: "Plant Habit: Semi-erect",
       desc: [
         "Suitable for Kharif season",
@@ -203,8 +203,8 @@ const seedData = {
       ]
     },
     {
-      title: "ADITYA (HY-803)",
-      img: "Assets/images/chilli/aditya 8043.png",
+      title: "ADITYA (HY-8043)",
+      img: "Assets/images/chilli/Aditya.png",
       habit: "Plant Habit: Robust, erect",
       desc: [
         "Suitable for all seasons",
@@ -337,13 +337,12 @@ const seedData = {
         "Fruits with wrinkles, light green to deep red, Dual – purpose, High pungency",
         "Fruits are 15 cm long, 1.3 cm diameter",
         "Maturity in 56 - 70 DAT",
-        "Maturity in 55 - 60 DAT",
         "Tolerance to ChLCV, CVMV and powdery mildew",
         "High-yielding hybrid"
       ]
     },
     {
-      title: "AADYA (HY-826)",
+      title: "AADYA (HY-828)",
       img: "Assets/images/chilli/Aadya.png",
       habit: "Plant Habit: Semi-erect",
       desc: [
@@ -376,7 +375,7 @@ const seedData = {
       desc: [
         "Suitable for all seasons",
         "Semi spreading plant type",
-        "Firm, dark green, shiny fruits, high pungency",
+        "Firm, dark green, shiny fruits, medium  pungency",
         "Fruits are 8 -10 cm long, 0.8-1 cm diameter",
         "Very Early Maturity in 60 - 65 DAT",
         "Intermediate Tolerance to ChLCV, CVMV and powdery mildew",
