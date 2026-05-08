@@ -79,7 +79,7 @@ const seedData = {
     },
     {
       title: "IRA (HY-301)",
-      img: "Assets/images/Product-pack.svg",
+      img: "Assets/images/chilli/IRA-(HY-301).png",
       desc: [
         "Suitable for all seasons.",
         "Semi-determinate plant with dark green foliage.",
@@ -610,7 +610,7 @@ const seedData = {
     },
     {
       title: "ARYA (HY-6006)",
-      img: "Assets/images/ridge gourd/arya.png",
+      img: "Assets/images/ridge gourd/Aarya.png",
       habit: "Plant Habit: Strong, fast-growing vines",
       desc: [
         "Strong, fast-growing vines with healthy growth.",
