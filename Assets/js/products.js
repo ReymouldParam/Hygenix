@@ -834,7 +834,7 @@ const seedData = {
       ]
     },
     {
-      title: "BAHUBALI (HY-903)",
+      title: "BAHUBALI (HY-902)",
       img: "Assets/images/pumpkin/bahubali.png",
       habit: "Plant Habit: Dense, fast-spreading vines",
       desc: [
