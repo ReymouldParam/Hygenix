@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $emailSent = mail($to, $subject, $body);
 
     if ($emailSent) {
-        header("Location: index.html?emailSuccess=true");
+        header("Location: contact-page.html?emailSuccess=true");
     } else {
         header("Location: contact-page.html?emailSuccess=false");
     }
