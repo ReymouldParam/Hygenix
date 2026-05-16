@@ -71,7 +71,7 @@
             country is a testament to the trust and respect the brand has earned.
           </p>
         </div>
-        <div class="our-story-image" >
+        <div class="our-story-image">
           <img src="Assets/images/about.svg" alt="Shri Yaganti Venkateswarlu (YVR)" class="our-story-image">
         </div>
       </div>
@@ -125,11 +125,11 @@
   <script src="Assets/js/home.js"></script>
   <script src="mission-snake-border.js"></script>
   <script>
-
     (function () {
       const box = document.querySelector('.mission-content');
       if (!box) return;
 
+      // --- Inject SVG ---
       const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
       svg.classList.add('snake-svg');
       svg.setAttribute('preserveAspectRatio', 'none');
@@ -139,11 +139,69 @@
       svg.appendChild(rect);
       box.insertBefore(svg, box.firstChild);
 
-      function run() {
+      // --- Config ---
+      const BORDER_RADIUS = 14;    // must match CSS border-radius
+      const STROKE_WIDTH = 2.5;
+      const SNAKE_FRAC = 0.18;  // snake length as fraction of perimeter
+      const BASE_SPEED = 0.00018; // perimeter-fraction per ms at speed multiplier 1
+      const CORNER_SPEED = 0.25;  // multiplier on corners  → slow
+      const EDGE_SPEED = 3.2;   // multiplier on straights → fast
+
+      let perimeter = 1;
+      let snakeLen = 1;
+      let segments = [];
+      let offset = 0;   // 0–1, fraction of perimeter travelled
+      let rafId = null;
+      let lastTs = null;
+
+      // Build 8 segments (corner, straight) × 4 sides, with speed multipliers
+      function buildSegments(w, h) {
+        const pad = STROKE_WIDTH / 2;
+        const r = BORDER_RADIUS;
+        const cornerArc = (Math.PI / 2) * r;
+        const sW = (w - STROKE_WIDTH) - 2 * r;  // top/bottom straight
+        const sH = (h - STROKE_WIDTH) - 2 * r;  // left/right straight
+        const P = 2 * (sW + sH) + 4 * cornerArc;
+
+        const cF = cornerArc / P;
+        const wF = sW / P;
+        const hF = sH / P;
+
+        // Clockwise from top-left: corner→top→corner→right→corner→bottom→corner→left
+        const defs = [
+          [cF, CORNER_SPEED],  // top-left corner
+          [wF, EDGE_SPEED],  // top edge
+          [cF, CORNER_SPEED],  // top-right corner
+          [hF, EDGE_SPEED],  // right edge
+          [cF, CORNER_SPEED],  // bottom-right corner
+          [wF, EDGE_SPEED],  // bottom edge
+          [cF, CORNER_SPEED],  // bottom-left corner
+          [hF, EDGE_SPEED],  // left edge
+        ];
+
+        let cursor = 0;
+        return {
+          P,
+          segs: defs.map(([frac, speed]) => {
+            const seg = { start: cursor, end: cursor + frac, speed };
+            cursor += frac;
+            return seg;
+          }),
+        };
+      }
+
+      function speedAt(frac) {
+        const f = ((frac % 1) + 1) % 1;
+        for (const seg of segments) {
+          if (f >= seg.start && f < seg.end) return seg.speed;
+        }
+        return 1;
+      }
+
+      function setup() {
         const w = box.offsetWidth;
         const h = box.offsetHeight;
-        const sw = 2.5;
-        const pad = sw / 2;
+        const pad = STROKE_WIDTH / 2;
 
         svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
         svg.setAttribute('width', w);
@@ -151,26 +209,42 @@
 
         rect.setAttribute('x', pad);
         rect.setAttribute('y', pad);
-        rect.setAttribute('width', w - sw);
-        rect.setAttribute('height', h - sw);
-        rect.setAttribute('rx', 14);
+        rect.setAttribute('width', w - STROKE_WIDTH);
+        rect.setAttribute('height', h - STROKE_WIDTH);
+        rect.setAttribute('rx', BORDER_RADIUS);
 
-        const perimeter = 2 * ((w - sw) + (h - sw));
-        const snakeLen = perimeter * 0.22;
+        const result = buildSegments(w, h);
+        perimeter = result.P;
+        segments = result.segs;
+        snakeLen = perimeter * SNAKE_FRAC;
 
         rect.style.strokeDasharray = `${snakeLen} ${perimeter - snakeLen}`;
-        rect.style.strokeDashoffset = snakeLen;
-
-        rect.getAnimations().forEach(a => a.cancel());
-        rect.animate(
-          [{ strokeDashoffset: snakeLen }, { strokeDashoffset: snakeLen - perimeter }],
-          { duration: 5800, iterations: Infinity, easing: 'linear' }
-        );
       }
 
-      run();
-      window.addEventListener('resize', run);
-    })();  </script>
+      function tick(ts) {
+        if (!lastTs) lastTs = ts;
+        const dt = Math.min(ts - lastTs, 50); // cap dt to avoid jump on tab-switch
+        lastTs = ts;
+
+        offset += BASE_SPEED * speedAt(offset) * dt;
+        if (offset >= 1) offset -= 1;
+
+        rect.style.strokeDashoffset = snakeLen - offset * perimeter;
+
+        rafId = requestAnimationFrame(tick);
+      }
+
+      function start() {
+        if (rafId) cancelAnimationFrame(rafId);
+        lastTs = null;
+        rafId = requestAnimationFrame(tick);
+      }
+
+      setup();
+      start();
+
+      window.addEventListener('resize', setup);
+    })();</script>
 </body>
 
 </html>
